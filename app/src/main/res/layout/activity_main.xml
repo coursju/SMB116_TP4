@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/widgets_space" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/startBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/button_margin"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="onClickStart"
+                android:text="@string/start_ticker" />
+
+            <Button
+                android:id="@+id/stopBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/button_margin"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="onClickStop"
+                android:text="@string/stop_ticker" />
+
+            <Button
+                android:id="@+id/finishBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/button_margin"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_weight="1"
+                android:onClick="onClickFinish"
+                android:text="@string/finish" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widgets_space" />
+
+        <TextView
+            android:id="@+id/r1Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/R1_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/r2Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/R2_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/r3Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/R3_text"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

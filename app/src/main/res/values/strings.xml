@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TP4</string>
+    <string name="start_ticker">Start ticker</string>
+    <string name="stop_ticker">Stop ticker</string>
+    <string name="finish">Finish app</string>
+    <string name="R1_text">R1: count:</string>
+    <string name="R2_text">R2: count:</string>
+    <string name="R3_text">R3: count:</string>
+</resources>

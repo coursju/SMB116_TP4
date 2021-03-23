@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin">5dp</dimen>
+    <dimen name="widgets_space">30dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <integer name="abort_lengt">5</integer>
+</resources>
